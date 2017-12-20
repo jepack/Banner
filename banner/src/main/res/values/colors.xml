@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="indicator_txt_title" >#ffffff</color>
+    <color name="indicator_txt_subtitle" >#efefef</color>
+</resources>

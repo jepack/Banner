@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:jepack="http://schemas.android.com/apk/res-auto">
+    <data class="BannerIndicatorBinding" >
+        <import type="com.jepack.banner.model.BannerItem" />
+        <variable
+            name="item"
+            type="BannerItem" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_indicator"
+        jepack:indicatorSelected="@{item.isSelected}"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>
+
+</layout>

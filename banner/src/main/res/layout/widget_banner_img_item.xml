@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:jepack="http://schemas.android.com/apk/res-auto">
+    <data class="BannerImageBinding" >
+        <import type="com.jepack.banner.model.BannerItem" />
+        <variable
+            name="item"
+            type="BannerItem" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        jepack:scaleType="@{item.scaleType}"
+        jepack:imageLoader="@{item.imageLoader}"
+        jepack:imageUrl="@{item.imageUrl}"
+        android:contentDescription="@string/app_name"
+        />
+</LinearLayout>
+
+</layout>

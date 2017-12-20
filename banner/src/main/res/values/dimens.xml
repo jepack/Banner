@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_title_txt_size" >18sp</dimen>
+    <dimen name="indicator_subtitle_txt_size" >13sp</dimen>
+    <dimen name="banner_title_padding">5dp</dimen>
+</resources>
